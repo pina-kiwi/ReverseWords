@@ -1,7 +1,7 @@
 {
   "dependencies": {
-    "com.game399.shared": {
-      "version": "file:../../Shared/Game399.Shared/Runtime",
+    "com.game339.shared": {
+      "version": "file:../../Shared/Game339.Shared/Runtime",
       "depth": 0,
       "source": "local",
       "dependencies": {}

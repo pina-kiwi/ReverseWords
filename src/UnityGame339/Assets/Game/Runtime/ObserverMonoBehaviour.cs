@@ -1,4 +1,4 @@
-using Game399.Shared.Diagnostics;
+using Game339.Shared.Diagnostics;
 using UnityEngine;
 
 namespace Game.Runtime

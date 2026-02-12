@@ -1,5 +1,5 @@
-using Game399.Shared;
-using Game399.Shared.Models;
+using Game339.Shared;
+using Game339.Shared.Models;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Serialization;
