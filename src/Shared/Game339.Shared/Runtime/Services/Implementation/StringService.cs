@@ -1,5 +1,7 @@
+using System;
 using System.Linq;
 using Game339.Shared.Diagnostics;
+using UnityEngine.Playables;
 
 namespace Game339.Shared.Services.Implementation
 {
@@ -17,6 +19,13 @@ namespace Game339.Shared.Services.Implementation
             var output = new string(input.Reverse().ToArray());
             _log.Info($"{nameof(StringService)}.{nameof(Reverse)} - {nameof(input)}: {input} - {nameof(output)}: {output}");
             return output;
+        }
+
+        public string ReverseWords(string input)
+        {
+            var output = input.Split(' ');
+            Array.Reverse(output);
+            return string.Join(" ", output);
         }
     }
 }
