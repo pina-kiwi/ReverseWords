@@ -22,7 +22,10 @@ namespace Game339.Shared.Services.Implementation
 
         public string ReverseWords(string input)
         {
-            var output = input.Split(' ');
+            if (string.IsNullOrWhiteSpace(input))
+                return input;
+            
+            string[] output = input.Split(' ', StringSplitOptions.RemoveEmptyEntries);
             Array.Reverse(output);
             return string.Join(" ", output);
         }
